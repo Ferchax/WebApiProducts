@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\productos\" />
+    <Folder Include="Images\productos\cola\" />
+    <Folder Include="Images\productos\cola-sin-azucar\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+</Project>
