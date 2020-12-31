@@ -11,7 +11,6 @@ using ProductsQR.Repositories;
 
 namespace ProductsQR.Controllers
 {
-    [EnableCors("allowSpecificOrigins")]
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {

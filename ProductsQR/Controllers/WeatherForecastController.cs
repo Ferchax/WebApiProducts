@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 
 namespace ProductsQR.Controllers
 {
-    [EnableCors("allowSpecificOrigins")]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

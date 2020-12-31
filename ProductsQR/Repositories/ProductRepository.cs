@@ -9,8 +9,12 @@ namespace ProductsQR.Repositories
     {
         readonly List<Product> products;
 
+        private string serverUrl;
+
         public ProductRepository()
         {
+            serverUrl = "https://localhost:5001";
+
             products = new List<Product>
             {
                 new Product
@@ -20,7 +24,7 @@ namespace ProductsQR.Repositories
                     Name = "COLA",
                     Description = "Sabor Manaos Cola 1,25LTS",
                     Price = 61.00m,
-                    ImageUrl = "./Images/productos/cola/MANAOS-COLA-1,25LTS.jpg"
+                    ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-1,25LTS.jpg"
                 },
                 new Product
                 {
@@ -29,7 +33,7 @@ namespace ProductsQR.Repositories
                     Name = "COLA",
                     Description = "Sabor Manaos Cola 2,25LTS",
                     Price = 83.00m,
-                    ImageUrl = "./Images/productos/cola/MANAOS-COLA-2,25LTS.jpg"
+                    ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-2,25LTS.jpg"
                 },
                 new Product
                 {
@@ -38,7 +42,7 @@ namespace ProductsQR.Repositories
                     Name = "COLA",
                     Description = "Sabor Manaos Cola 3LTS",
                     Price = 95.45m,
-                    ImageUrl = "./Images/productos/cola/MANAOS-COLA-3.jpg"
+                    ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-3LTS.jpg"
                 },
                 new Product
                 {
@@ -47,7 +51,7 @@ namespace ProductsQR.Repositories
                     Name = "COLA",
                     Description = "Sabor Manaos Cola 600LTS",
                     Price = 39.15m,
-                    ImageUrl = "./Images/productos/cola/MANAOS-COLA-600CC.jpg"
+                    ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-600CC.jpg"
                 },
                 new Product
                 {
@@ -56,7 +60,7 @@ namespace ProductsQR.Repositories
                     Name = "COLA",
                     Description = "Sabor Manaos Cola Sin Azúcar 2,25LTS",
                     Price = 83.00m,
-                    ImageUrl = "./Images/Productos/cola-sin-azucar/MANAOS-COLA-SIN-AZÚCAR-2,25LTS.jpg"
+                    ImageUrl = $"{serverUrl}/images/Productos/cola-sin-azucar/MANAOS-COLA-SIN-AZÚCAR-2,25LTS.jpg"
                 }
             };
         }
