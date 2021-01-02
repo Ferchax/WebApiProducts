@@ -11,6 +11,7 @@ using ProductsQR.Repositories;
 
 namespace ProductsQR.Controllers
 {
+    [EnableCors("allowSpecificOrigins")]
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
@@ -38,7 +39,7 @@ namespace ProductsQR.Controllers
                 var lastPage = (int)Math.Ceiling(totalProducts / (double)limit);
                 var nextPage = _page < lastPage ? _page + 1 : 0;
 
-                var serverURL = "https://localhost:5001/api/products";
+                var serverURL = "https://webapiproductsqr.azurewebsites.net/api/products";
 
                 var limitParam = _limit != 0 ? $"&_limit={limit}" : string.Empty;
 

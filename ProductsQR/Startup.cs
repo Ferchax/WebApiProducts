@@ -34,9 +34,9 @@ namespace ProductsQR
                 options.AddPolicy(name: AllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200")
+                        builder.WithOrigins("https://productsqr-f48f0.web.app",
+                                            "https://productsqr-f48f0.firebaseapp.com")
                                .WithExposedHeaders("Link");
-                        ;
                     });
             });
 

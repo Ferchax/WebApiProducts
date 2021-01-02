@@ -13,7 +13,7 @@ namespace ProductsQR.Repositories
 
         public ProductRepository()
         {
-            serverUrl = "https://localhost:5001";
+            serverUrl = "https://webapiproductsqr.azurewebsites.net";
 
             products = new List<Product>
             {
