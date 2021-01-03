@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using ProductsQR.Repositories;
 
 namespace ProductsQR.Controllers
 {
+    [EnableCors("allowSpecificOrigins")]
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
@@ -23,6 +25,7 @@ namespace ProductsQR.Controllers
 
         // GET: api/values
         [HttpGet]
+        //public IEnumerable<string> Get(int _page = 0, int _limit = 0)
         public IActionResult Get(int _page = 0, int _limit = 0)
         {
             var products = repo.GetProducts();
@@ -31,14 +34,16 @@ namespace ProductsQR.Controllers
 
                 var limit = _limit != 0 ? _limit : 3;
 
-                var totalProducts = products.Count;
+                var totalProducts = products.Count();
 
                 var firstPage = 1;
                 var previousPage = _page > firstPage ? _page - 1 : 0;
+                //Siempre tiene que redondear para arriba. Ej: 5 totalprod / 3 limit (total de productos x pag)
                 var lastPage = (int)Math.Ceiling(totalProducts / (double)limit);
                 var nextPage = _page < lastPage ? _page + 1 : 0;
 
-                var serverURL = "https://localhost:5001/api/products";
+                var serverURL = "https://webapiproductsqr.azurewebsites.net/api/products";
+                //var serverURL = "https://localhost:5001/api/products";
 
                 var limitParam = _limit != 0 ? $"&_limit={limit}" : string.Empty;
 
@@ -51,23 +56,28 @@ namespace ProductsQR.Controllers
 
                 var index = (_page - 1) * limit;
 
-                var maxLimit = (limit * _page);
+                //When de type is a List and not IEnumerable (because you can't use Linq with List type)
+                //var maxLimit = (limit * _page);
+                //limit = maxLimit > totalProducts ? limit - (maxLimit - totalProducts) : limit;
+                //products = products.GetRange(index, limit);
 
-                limit = maxLimit > totalProducts ? limit - (maxLimit - totalProducts) : limit;
-
-                products = products.GetRange(index, limit);
+                //IEnumerable so you can use Linq
+                products = products.Skip(index).Take(limit).ToList();
             }
-            
-            var result = new ObjectResult(products);            
+
+            var result = new ObjectResult(products);
+            //Si queremos que devuelva un IEnumearable<string>
+            //var result = products.Select(x => JsonSerializer.Serialize(x));
 
             return result;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Get(string id)
         {
-            return "value";
+            var product = JsonSerializer.Serialize(repo.GetProduct(id));
+            return product;
         }
 
         // POST api/values
