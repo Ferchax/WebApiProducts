@@ -25,8 +25,8 @@ namespace ProductsQR.Controllers
 
         // GET: api/values
         [HttpGet]
-        //public IEnumerable<string> Get(int _page = 0, int _limit = 0)
-        public IActionResult Get(int _page = 0, int _limit = 0)
+        //public IActionResult Get(int _page = 0, int _limit = 0)
+        public IEnumerable<Product> Get(int _page = 0, int _limit = 0)
         {
             var products = repo.GetProducts();
 
@@ -55,21 +55,18 @@ namespace ProductsQR.Controllers
                 Response.Headers.Add("Link", $"{firstPageLink}{previousPageLink}{nextPageLink}{lastPageLink}");
 
                 var index = (_page - 1) * limit;
-
-                //When de type is a List and not IEnumerable (because you can't use Linq with List type)
+                
                 //var maxLimit = (limit * _page);
                 //limit = maxLimit > totalProducts ? limit - (maxLimit - totalProducts) : limit;
                 //products = products.GetRange(index, limit);
-
-                //IEnumerable so you can use Linq
+                
                 products = products.Skip(index).Take(limit).ToList();
             }
 
-            var result = new ObjectResult(products);
-            //Si queremos que devuelva un IEnumearable<string>
+            //var result = new ObjectResult(products);          
             //var result = products.Select(x => JsonSerializer.Serialize(x));
 
-            return result;
+            return products;
         }
 
         // GET api/values/5

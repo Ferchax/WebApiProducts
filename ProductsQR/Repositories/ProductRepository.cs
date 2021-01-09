@@ -26,6 +26,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS COLA",
                     Description = "Sabor Manaos Cola 1,25LTS",
                     Price = 61.00m,
+                    Quantity = 99899,
                     ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-1,25LTS.jpg"
                 },
                 new Product
@@ -35,6 +36,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS COLA",
                     Description = "Sabor Manaos Cola 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-2,25LTS.jpg"
                 },
                 new Product
@@ -44,6 +46,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS COLA",
                     Description = "Sabor Manaos Cola 3LTS",
                     Price = 95.45m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-3LTS.jpg"
                 },
                 new Product
@@ -53,6 +56,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS COLA",
                     Description = "Sabor Manaos Cola 600CC",
                     Price = 39.15m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/productos/cola/MANAOS-COLA-600CC.jpg"
                 },
                 new Product
@@ -62,6 +66,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS COLA SIN AZUCAR",
                     Description = "Sabor Manaos Cola Sin Azúcar 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/cola-sin-azucar/MANAOS-COLA-SIN-AZÚCAR-2,25LTS.jpg"
                 },
                 new Product
@@ -71,6 +76,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS GUARANA",
                     Description = "Sabor Manaos Guaraná 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/guarana/MANAOS-GUARANÁ-2,25LTS.jpg"
                 },
                 new Product
@@ -80,6 +86,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS GUARANA",
                     Description = "Sabor Manaos Guaraná 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/guarana/MANAOS-GUARANÁ-3LTS.jpg"
                 },
                 new Product
@@ -89,6 +96,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMA LIMON",
                     Description = "Sabor Manaos Lima Limón 1,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/lima-limon/MANAOS-LIMA-LIMÓN-1,25LTS.jpg"
                 },
                 new Product
@@ -98,6 +106,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMA LIMON",
                     Description = "Sabor Manaos Lima Limón 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/lima-limon/MANAOS-LIMA-LIMÓN-2,25LTS.jpg"
                 },
                 new Product
@@ -107,6 +116,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMA LIMON",
                     Description = "Sabor Manaos Lima Limón 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/lima-limon/MANAOS-LIMA-LIMÓN-3LTS.jpg"
                 },
                 new Product
@@ -116,6 +126,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMA LIMON",
                     Description = "Sabor Manaos Lima Limón 600CC",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/lima-limon/MANAOS-LIMA-LIMÓN-600CC.jpg"
                 },
                 new Product
@@ -125,6 +136,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMON",
                     Description = "Sabor Manaos Limón 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/limon/MANAOS-LIMÓN-2,25LTS.jpg"
                 },
                 new Product
@@ -134,6 +146,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS LIMON",
                     Description = "Sabor Manaos Limón 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/limon/MANAOS-LIMÓN-3LTS.jpg"
                 },
                 new Product
@@ -143,6 +156,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS MANZANA",
                     Description = "Sabor Manaos Manzana 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/manzana/MANAOS-MANZANA-2,25LTS.jpg"
                 },
                 new Product
@@ -152,6 +166,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS MANZANA",
                     Description = "Sabor Manaos Manzana 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/manzana/MANAOS-MANZANA-3LTS.jpg"
                 },
                 new Product
@@ -161,6 +176,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS NARANJA",
                     Description = "Sabor Manaos Naranja 1,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/naranja/MANAOS-NARANJA-1,25LTS.jpg"
                 },
                 new Product
@@ -170,6 +186,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS NARANJA",
                     Description = "Sabor Manaos Naranja 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/naranja/MANAOS-NARANJA-2,25LTS.jpg"
                 },
                 new Product
@@ -179,6 +196,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS NARANJA",
                     Description = "Sabor Manaos Naranja 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/naranja/MANAOS-NARANJA-3LTS.jpg"
                 },
                 new Product
@@ -188,6 +206,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS NARANJA",
                     Description = "Sabor Manaos Naranja 600CC",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/naranja/MANAOS-NARANJA-600CC.jpg"
                 },
                 new Product
@@ -197,6 +216,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO AMARILLO",
                     Description = "Sabor Manaos Pomelo Amarillo 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-amarillo/MANAOS-POMELO-AMARILLO-2,25LTS.jpg"
                 },
                 new Product
@@ -206,6 +226,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO BLANCO",
                     Description = "Sabor Manaos Pomelo Blanco 1,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-blanco/MANAOS-POMELO-BLANCO-1,25LTS.jpg"
                 },
                 new Product
@@ -215,6 +236,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO BLANCO",
                     Description = "Sabor Manaos Pomelo Blanco 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-blanco/MANAOS-POMELO-BLANCO-2,25LTS.jpg"
                 },
                 new Product
@@ -224,6 +246,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO BLANCO",
                     Description = "Sabor Manaos Pomelo Blanco 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-blanco/MANAOS-POMELO-BLANCO-3LTS.jpg"
                 },
                 new Product
@@ -233,6 +256,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO BLANCO",
                     Description = "Sabor Manaos Pomelo Blanco 600CC",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-blanco/MANAOS-POMELO-BLANCO-600CC.jpg"
                 },
                 new Product
@@ -242,6 +266,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS POMELO ROSADO",
                     Description = "Sabor Manaos Pomelo Rosado 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/pomelo-rosado/MANAOS-POMELO-ROSADO-2,25LTS.jpg"
                 },
                 new Product
@@ -251,6 +276,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS UVA",
                     Description = "Sabor Manaos Uva 1,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/uva/MANAOS-UVA-1,25LTS.jpg"
                 },
                 new Product
@@ -260,6 +286,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS UVA",
                     Description = "Sabor Manaos Uva 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/uva/MANAOS-UVA-2,25LTS.jpg"
                 },
                 new Product
@@ -269,6 +296,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS UVA",
                     Description = "Sabor Manaos Uva 600CC",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/uva/MANAOS-UVA-600CC.jpg"
                 },
                 new Product
@@ -278,6 +306,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS SODA",
                     Description = "Sabor Manaos Soda 2LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/soda/MANAOS-SODA-2LTS.jpg"
                 },
                 new Product
@@ -287,6 +316,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS CITRUS",
                     Description = "Sabor Manaos Citrus 2LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/citrus/MANAOS-CITRUS-2,25LTS.jpg"
                 },
                 new Product
@@ -296,6 +326,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS CITRUS",
                     Description = "Sabor Manaos Citrus 3LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/citrus/MANAOS-CITRUS-3LTS.jpg"
                 },
                 new Product
@@ -305,6 +336,7 @@ namespace ProductsQR.Repositories
                     Name = "MANAOS NARANJA DURAZNO",
                     Description = "Sabor Manaos Naranja Durazno 2,25LTS",
                     Price = 83.00m,
+                    Quantity = 99999,
                     ImageUrl = $"{serverUrl}/images/Productos/naranja-durazno/MANAOS-NARANJA-DURAZNO-2,25LTS.jpg"
                 }
             };
