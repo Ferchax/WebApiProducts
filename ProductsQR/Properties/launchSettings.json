@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/products",
-      "applicationUrl": "https://webapiproductsqr.azurewebsites.net/api/products",
+      "applicationUrl": "https://webapiproductsqr.azurewebsites.net",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

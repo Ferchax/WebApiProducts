@@ -39,17 +39,30 @@ namespace ProductsQR.Repositories
             };
         }
 
-        public bool AddOrUpdateOrder(Order order)
+        public bool AddOrUpdateOrder(Order _order)
         {
-            var isOrderExist = GetOrder(order.FKIdProduct, order.FKIdUser) != null ? true : false;
+            var order = GetOrder(_order.FKIdProduct, _order.FKIdUser);
 
-            if(isOrderExist)
+            if(order != null)
             {
-                UpdateOrder(order);
+                _order.Id = order.Id;
+                UpdateOrder(_order);
             }
             else
             {
-                AddOrder(order);
+                var repoProduct = new ProductRepository();
+                var product = repoProduct.GetProduct(_order.FKIdProduct);
+                var repoUser = new UserRepository();
+                var user = repoUser.GetUserById(_order.FKIdUser);
+
+                if(user != null && product != null)
+                {
+                    AddOrder(_order);
+                }
+                else
+                {
+                    return false;
+                }
             }
 
             return true;
