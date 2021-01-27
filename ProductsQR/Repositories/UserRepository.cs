@@ -115,6 +115,15 @@ namespace ProductsQR.Repositories
                    Legajo = "4283",
                    Password = "fscociety",
                    Email = "elliot.alderson@refres.com.ar"
+                },
+                new User
+                {
+                   Id = id++,
+                   Name = "Refres",
+                   LastName = "Refres",
+                   Legajo = "2435",
+                   Password = "refres",
+                   Email = "ventas@refres.com.ar"
                 }
             };
         }
